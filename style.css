@@ -1,0 +1,161 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 12px 90px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+header .user-foto {
+    min-width: 65px;
+    min-height: 65px;
+    /* position: relative; */
+}
+
+header .user-foto img {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 120px;
+}
+
+header .user-name {
+    min-width: 275px;
+    padding: 0px 15px;
+}
+
+header .user-group {
+    min-width: 200px;
+    padding: 0px 30px;
+}
+
+header .stepcoin {
+    position: relative;
+    display: inline-block;
+}
+
+header .stepcoin .stepcoin-text {
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    top: 26px;
+    left: -100px;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border-top: 3px solid #1bd2c7;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #f6f8f9;
+}
+
+header .stepcoin .stepcoin-text .stepcoin-inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    padding: 8px 20px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+   
+}
+
+.stepcoin:hover .stepcoin-text {
+    visibility: visible;
+}
+
+body .nav {
+    width: 60px;
+    position:fixed ;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color:#495869;
+}
+body .nav div {
+    display: flex;
+}
+
+main .nav .sidebar-nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+main .nav .sidebar-nav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+main .nav .sidebar-nav ul li {
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 18px;
+    font-size: 18px;
+    position: relative;
+    list-style-type: none;
+}
+
+main .nav .sidebar-nav ul li a {
+    display: inline-block;
+    font-size: 0;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: #495869;
+    background-color: #495869;
+    
+}
+
+main .nav .sidebar-nav ul li a img {
+    width: 20px;
+    height: 20px;
+   
+    
+}
+
+.main-content {
+  
+
+    
+}
+
+.main-content .ratings {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.3fr;
+    
+
+
+}
+
+.main-content .ratings .left {
+    width: 200px;
+    height: 400px;
+    background-color: black;
+}
+
+.main-content .ratings .middle {
+    width: 200px;
+    height: 400px;
+    background-color: red;
+} 
+ 
+.main-content .ratings .right {
+    width: 200px;
+    height: 400px;
+    background-color: yellow;
+}
